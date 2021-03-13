@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Поддержка HTML5 в браузерах</title>
+     <link rel="stylesheet" href="css/style.css">
+     <script src="https://kit.fontawesome.com/73d0ad5760.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
+ </head>
+ <body>
+        <div class="header">
+
+            <div class="menu">
+                <ul>
+                  <li><a target="blank" href="index.html"><i class = "fa fa-cat"></i>В начало</a></li>
+                  <li><a target="blank" href="w3c_i_whatwg.html"><i class = "fa fa-hippo"></i>W3C и WHATWG</a></li>
+                  <li><a target="blank" href="new_semantic_elements.html"><i class = "fa fa-dog"></i>Семантические элементы</a></li>
+                  <li><a target="blank" href="biblioteki_html5_api.html"><i class = "fa fa-horse"></i>HTML5 API</a></li>
+                  <li><a target="blank" href="struktura_doc_html5.html"><i class = "fa fa-dove"></i>Структура документа</a></li>
+                  <li><a target="blank" href="poddergka_v_brauzerah.html"><i class = "fa fa-kiwi-bird"></i>Поддержка в браузерах</a></li>
+                  <li><a target="blank" href="prover_dost_doc.html"><i class = "fa fa-otter"></i>Достоверность документов</a></li>
+                  <li><a target="blank" href="global_atribut.html"><i class = "fa fa-spider"></i>Глобальные атрибуты</a></li>
+                  <li><a target="blank" href="obrabot_sobytiy.html"><i class = "fa fa-fish"></i>Обработчики событий</a></li>
+                  <li><a target="blank" href="alfavit_spisok.html"><i class = "fa fa-frog"></i>Список элементов</a></li>
+                </ul>
+
+            </div>
+        </div>
+        
+                        <div class="h1">
+                          <h1>Поддержка HTML5  в браузерах</h1>
+                        </div>
+    
+
+     <p>Большинство новых семантических элементов и атрибутов HTML5 поддерживается современными
+        браузерами, устаноленными на компьютерах и мобильных устройствах (Chrome, Safari,
+        Opera, Firefox, Enternet Explorer 9+). Для браузеров, не поддерживающих новые элементы 
+        и API, обычно применяется <em>полизаполнение</em> JavaScript (заплата), имитирующее поддержку 
+        HTML5. Полный набор существующих на данный момент полизаполнений можно найти в коллекции 
+        Modernizr, доступной по следующему адресу:</p>
+
+     <p><em>www.github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills</em></p>
+        
+     <p>В качестве простого примера полизаполнения можно рассмотреть сценарий "HTML5 Shiv", 
+            созданный Реми Шарпом. Что бы обеспечить совместимость устаревших браузеров 
+            (например, Enternet Explorer 8 и более ранние версии) с новыми элементами HTML5, 
+            применяется сценарий JavaScript, последовательно создающий каждый элемент в модели 
+            DOM. При этом браузер будет воспринимать соответсвующие стили и сценарии HTML5.</p>
+
+     <p> Например, в результате выполнения следующей команды создается элемент <em>section:</em></p>  
+
+     <p><em>document.createElement("section");</em></p>
+
+     <p>Сценарий HTML5 Shiv, разработанный Реми Шарпом, одновременно создает все новые 
+            элементы. Чтобы выполнить этот сценарий, воспользуйтесь следующим кодом, содержащим 
+            ссылку на хост Google.</p>
+
+     <pre>
+            &lt;!--[if lt IE 9]&gt;
+            &lt;script src="http://html5shiv.googlecode.com/svn/trunk/
+            html5-els.js"&gt;&lt;/script&gt;
+            &lt;[endif]--&gt;</pre>
+
+     <p>Используйте следующие ресурсы для отслеживания поддержки и приминения HTML5.</p>   
+<hr>    
+     <p><em>"When Can I Use..." (http://caniuse.com)</em></p>
+     <p>Описание браузеров, поддерживающих HTML5, CSS3 и другие веб-технологии, от Алексиса Девериа.</p>
+<hr>
+     <P><em>HTML5 Please (http://html5please.com)</em></P>
+     <p>Включает рекомендации по использованию средств HTML5 и CSS3.</p>
+<hr>
+     <p><em>Wikipedia "Comparison of Layout Engines (HTML5)" (http://en.wikipedia.org/wiki/Comparison_of_layout_engines_(HTML_5))</em></p>     
+     <p>Диаграммы, демонстрирующие поддержку HTML5 основными браузерами.</p>
+<hr>
+     <p><em>HTML5 Readiness (https://html5readiness.com/)</em></p>
+     <p>Полезная видеограмма, демонстрирующая растущую поддержку HTML5 и CSS3 с 2008 года до настоящего времени.</p>
+<hr>
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="wrapper">
+            <p> © 2021   Erlend Sakharov</p>
+        </div>
+    </div>  
+</body>
+</html>

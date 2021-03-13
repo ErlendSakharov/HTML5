@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Элемент area</title>
+     <link rel="stylesheet" href="css/style.css">
+     <script src="https://kit.fontawesome.com/73d0ad5760.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+
+ </head>
+    <body>
+        <div class="header">
+
+            <div class="menu">
+                <ul>
+                  <li><a target="blank" href="index.html"><i class = "fa fa-cat"></i>В начало</a></li>
+                  <li><a target="blank" href="w3c_i_whatwg.html"><i class = "fa fa-hippo"></i>W3C и WHATWG</a></li>
+                  <li><a target="blank" href="new_semantic_elements.html"><i class = "fa fa-dog"></i>Семантические элементы</a></li>
+                  <li><a target="blank" href="biblioteki_html5_api.html"><i class = "fa fa-horse"></i>HTML5 API</a></li>
+                  <li><a target="blank" href="struktura_doc_html5.html"><i class = "fa fa-dove"></i>Структура документа</a></li>
+                  <li><a target="blank" href="poddergka_v_brauzerah.html"><i class = "fa fa-kiwi-bird"></i>Поддержка в браузерах</a></li>
+                  <li><a target="blank" href="prover_dost_doc.html"><i class = "fa fa-otter"></i>Достоверность документов</a></li>
+                  <li><a target="blank" href="global_atribut.html"><i class = "fa fa-spider"></i>Глобальные атрибуты</a></li>
+                  <li><a target="blank" href="obrabot_sobytiy.html"><i class = "fa fa-fish"></i>Обработчики событий</a></li>
+                  <li><a target="blank" href="alfavit_spisok.html"><i class = "fa fa-frog"></i>Список элементов</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="h1">
+            <h1>Элемент <i>area</i></h1>
+            <p>&lt;area&gt; (XHTML: &lt;area /&gt; или &lt;area&ensp;/&gt;)</p>
+        </div>
+                             <p>Включается в состав элемента <i>map</i> клиентской карты 
+                                изображений для определения специфической области щелчков ("горячая область").</p>
+                             <h2>Применение</h2>
+
+                             <p><i><strong>Категории</strong></i></p>
+                             <p>Потоковый контент, фразообразующий контент.</p>
+
+                             <p><i><strong>Допустимые контексты</strong></i></p>
+                             <p>В области возможного появления фразообразующего контента должен
+                                находиться в составе элемента <i>map</i>.</p>
+
+                             <p><i><strong>Разрешенный контент</strong></i></p>
+                             <p>Пустой.</p>
+
+                             <p><i><strong>Начальные/конечные теги</strong></i></p>
+                             <p>Этот элемент пустой, что означает наличие единственного начального 
+                                 тега, и возможное отсутствие контекста. В HTML завершающий тег не 
+                                 допускается. В XHTML применяется завершающий тег (&lt;area /&gt; или &lt;area&ensp;/&gt;).</p>
+
+                             <h2>Атрибуты</h2>
+
+                             <p><i><strong>Глобальные атрибуты HTML5</strong></i></p>
+
+                             <p><i>alt = "текст"</i></p>
+                             <p><strong>Обязательный.</strong> Задает краткое описание изображения,которое появляется в 
+                                 том случае, когда файл изображения недоступен.</p>
+
+                             <p><i>coords = "значения"</i></p>
+                             <p>Указывает разделенный запятыми список пиксельных координат, которые задают "горячую" 
+                                 область карты изображений.</p>
+
+                             <p><i>download = "имя файла"</i></p>
+                             <p><strong>Только WHATWG и HTML5.1.</strong> Показывает ссылку, используемую для загрузки 
+                                ресурса. Значение является именем файла ресурса, которое должно быть дано в локальной 
+                                файловой системе один раз, когда он загружается.</p>
+
+                             <p><i>href = "URI"</i></p>
+                             <p>Указывает местоположение документа или ресурса, который стновится доступным после 
+                                    щелчка или касания определенной области.</p>
+
+                             <p><i>hreflang = "код языка"</i></p>   
+                             <p><strong>Не поддерживается в HTML 4.01, только HTML5.</strong> Указывает язык целевого документа.</p>
+                                 
+                             <p><i>media = "all | aural | braille | handheld | print | projection | screen | tty | tv"</i></p>
+                             <p><strong>Не поддерживается в HTML 4.01, только HTML5.</strong> Описывает носитель, для которого 
+                                 был создан целевой документ. Значение по умолчанию - <i>all</i>. Этот атрибут удален
+                                 в HTML5.1 и WHATWG</p>
+
+                             <p><i>ping = "URL - ссылки"</i></p>
+                             <p><strong>Только WHATWG.</strong> Определение разделенного пробелами списка URL - ссылок, 
+                                  используемого после перехода по ссылке. Эти ссылки применяются для отслеживания пользователей.</p>
+
+                             <p><i>rel = "ключевое слово типа ссылки"</i></p>
+                             <p>Описывает одну или несколько связей между исходным и связанным документами. Для элемента 
+                                 <i>area</i> применяются следующие типы ссылочных связей: <i>alternate, author, bookmark, 
+                                 help, license, next, nofollow, noreferrer, prefetch, prev, search,</i> и <i>tag.</i> </p>
+
+                                 <p><i>shape = "rect | circle | poly | defauit"</i></p>
+                                 <p>Определение формы области для щелчков.</p>
+
+                                 <p><i>target = "текст"</i></p>
+                                 <p>Определение имени окна или фрейма <i>iframe,</i> используемого для отображения целевого документа.</p>
+
+                                 <p><i>type = "тип MIME"</i></p>
+                                 <p>Определение типа носителя или контента (тип MIME) и связанного контента (например, <i>text/html).</i></p>
+
+                                 <h3>Пример (HTML)</h3>
+<pre>                     
+&lt;map name="space"&gt;                    
+   &lt;area shape="rect" coords="203,23,285,106" href="http://www.nasa.gov" alt=""&gt;
+   &lt;area shape="rect" coords="203,23,285,106" href="http://www.nasa.gov" alt=""&gt;
+&lt;/map&gt;
+</pre>
+
+
+
+        <div class="footer">
+            <div class="wrapper">
+                <p> © 2021   Erlend Sakharov</p>
+            </div>
+        </div> 
+</body>
+</html>

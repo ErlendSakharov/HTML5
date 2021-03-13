@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Элемент canvas</title>
+     <link rel="stylesheet" href="css/style.css">
+     <script src="https://kit.fontawesome.com/73d0ad5760.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+
+ </head>
+    <body>
+        <div class="header">
+
+            <div class="menu">
+                <ul>
+                  <li><a target="blank" href="index.html"><i class = "fa fa-cat"></i>В начало</a></li>
+                  <li><a target="blank" href="w3c_i_whatwg.html"><i class = "fa fa-hippo"></i>W3C и WHATWG</a></li>
+                  <li><a target="blank" href="new_semantic_elements.html"><i class = "fa fa-dog"></i>Семантические элементы</a></li>
+                  <li><a target="blank" href="biblioteki_html5_api.html"><i class = "fa fa-horse"></i>HTML5 API</a></li>
+                  <li><a target="blank" href="struktura_doc_html5.html"><i class = "fa fa-dove"></i>Структура документа</a></li>
+                  <li><a target="blank" href="poddergka_v_brauzerah.html"><i class = "fa fa-kiwi-bird"></i>Поддержка в браузерах</a></li>
+                  <li><a target="blank" href="prover_dost_doc.html"><i class = "fa fa-otter"></i>Достоверность документов</a></li>
+                  <li><a target="blank" href="global_atribut.html"><i class = "fa fa-spider"></i>Глобальные атрибуты</a></li>
+                  <li><a target="blank" href="obrabot_sobytiy.html"><i class = "fa fa-fish"></i>Обработчики событий</a></li>
+                  <li><a target="blank" href="alfavit_spisok.html"><i class = "fa fa-frog"></i>Список элементов</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+       
+        <div class="h1">
+            <h1>Элемент <i>canvas</i></h1>
+            <p>&lt;canvas&gt;...&lt;/canvas&gt;</p>
+        </div>
+
+        <p><b>Не поддерживается в HTML 4.01.</b>Представляет двумерную область, которая может 
+           использоваться для отображения динамической растровой графики, такой как диаграммы, 
+           игры, графические редакторы, анимационные экраны и т.п. При выполнении кода, 
+           включающего элемент canvas, на странице, используемой в качестве холста, создается 
+           прямоугольная область. Изображение на холстеформируется с помощью сценария (обычно JavaScript</p>
+
+        <p>Элемент canvas - одно из наилучших средств, представляемых HTML5 и имеющих базовую 
+            поддеожку в Firefox 2.0+, Safari 3.1+, Chrome 1.0+, Internet Explorer 9+ и Opera 9.0.
+            С помощью библиотеки JavaScript FlashCanvas (http://Flashcanvas.net) можно добавить
+            в браузер поддержку этого элемента, реализуемую на основе Flash Drawing API.</p>
+
+            <h3>Применение</h3>
+
+            <p><i><b>Категории</b></i></p>
+            <p>Потоковый контент, фразообразующий контент, внедренный контент, явный контент.</p>
+
+            <p><i><b>Допустимые контексты</b></i></p>
+            <p>В области возможного появления внедренного контента.</p>
+
+            <p><i><b>Разрешенный контент</b></i></p>
+            <p>Прозрачный, фразообразующий или потоковый контент.</p>
+
+            <p><i><b>Начальные/конечные теги</b></i></p>
+            <p>Обязательный/обязательный.</p>
+
+            <h3>Атрибуты</h3>
+
+            <p><i><b>Глобальные атрибуты HTML5</b></i></p>
+
+            <p>height = "число"</p>
+            <p>Высота области холста, выраженная в CSS-пикселях.</p>
+
+            <p>width = "число"</p>
+            <p>Ширина области холста, выраженная в CSS-пикселях.</p>
+
+            <h3>Пример</h3>
+<pre>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;script type="application/x-javascript"&gt;
+function draw () {
+    var canvas = document.getElementById("box");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "rgb (163, 120, 240)";
+    ctx.fillRect (55, 50, 75, 100);
+}
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body onload="draw ()"&gt;
+     &lt;canvas id="box" width="250" height="250"&gt;&lt;/canvas&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+
+
+
+
+        <div class="footer">
+            <div class="wrapper">
+                <p> &#169 2021   Erlend Sakharov</p>
+            </div>
+        </div> 
+    </body>
+</html>

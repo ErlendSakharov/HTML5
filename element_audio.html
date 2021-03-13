@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Элемент audio</title>
+     <link rel="stylesheet" href="css/style.css">
+     <script src="https://kit.fontawesome.com/73d0ad5760.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+
+ </head>
+    <body>
+        <div class="header">
+
+            <div class="menu">
+                <ul>
+                  <li><a target="blank" href="index.html"><i class = "fa fa-cat"></i>В начало</a></li>
+                  <li><a target="blank" href="w3c_i_whatwg.html"><i class = "fa fa-hippo"></i>W3C и WHATWG</a></li>
+                  <li><a target="blank" href="new_semantic_elements.html"><i class = "fa fa-dog"></i>Семантические элементы</a></li>
+                  <li><a target="blank" href="biblioteki_html5_api.html"><i class = "fa fa-horse"></i>HTML5 API</a></li>
+                  <li><a target="blank" href="struktura_doc_html5.html"><i class = "fa fa-dove"></i>Структура документа</a></li>
+                  <li><a target="blank" href="poddergka_v_brauzerah.html"><i class = "fa fa-kiwi-bird"></i>Поддержка в браузерах</a></li>
+                  <li><a target="blank" href="prover_dost_doc.html"><i class = "fa fa-otter"></i>Достоверность документов</a></li>
+                  <li><a target="blank" href="global_atribut.html"><i class = "fa fa-spider"></i>Глобальные атрибуты</a></li>
+                  <li><a target="blank" href="obrabot_sobytiy.html"><i class = "fa fa-fish"></i>Обработчики событий</a></li>
+                  <li><a target="blank" href="alfavit_spisok.html"><i class = "fa fa-frog"></i>Список элементов</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+       
+        <div class="h1">
+            <h1>Элемент <i>audio</i></h1>
+            <p>&lt;audio&gt;...&lt;/audio&gt;</p>
+        </div>
+
+        <p><strong>Не поддерживается в HTML 4.01.</strong>С помощью этого элемента 
+        осуществляется внедрение зукового файла в веб-страницу (при этом подключаемый 
+        модуль не применяется). Контент элемента <i>audio</i> может применятся 
+        пользовательскими агентами, которые не поддерживают этот элемент. При передаче 
+        аудиофайла может использоваться атрибут <i>src</i>. Поскольку разные браузеры поддерживают 
+        различные звуковые форматы, <i>audio</i> включает наборы параметров для форматов файлов, 
+        поддерживаемых элементом <i>source.</i> Элемент <i>audio</i> также поддерживает альтернативный 
+        контент, отображаемый браузерами, которые не поддерживают данный элемент.</p>
+        <p>Форматы звуковых файлов, поддерживаемые в элементе <i>audio,</i> находятся в стадии обсуждения. 
+        В настоящий момент не существует аудиоформата, поддерживаемого всеми браузерами. На момент 
+        написания справочника распространенные браузеры поддерживали следующие форматы зуковых файлов.</p>
+                   
+      <li><strong>IE 9+:</strong> (версии, предшествующие 9, не поддержиают элемент <i>audio</i>): MP3, MP4 и WebM.</li>
+      <li><strong>Chrome 5+:</strong> MP3, MP4, WAV, Ogg, Vorbis и WebM.</li>
+      <li><strong>Firefox 3.5+:</strong> WAV, Ogg, Vorbis и WebM (4+). Поддержка MP3 и MP4 появляется 
+       в Firefox только в том случае, если доступен декодер от независимого поставщика. </li>
+      <li><strong>Safari 4+ и Mobile Safari 3+:</strong> MP3, MP4 и WAV.</li>
+      <li><strong>Android (2.0+):</strong> MP3, WAV, Ogg, Vorbis и WebM (2.3.3+).</li>
+
+      <h3>Применение</h3>
+
+      <p><i><b>Категории</b></i></p>
+      <p>Потоковый контент, фразообразующий контент, внедренный контент, интерактивный контент 
+          (при наличии атрибута <i>controls),</i> явный контент (при наличии атрибута <i>controls).</i></p>
+
+          <p><i><b>Допустимые контексты</b></i></p>
+          <p>В области возможного появления потокового контента.</p>
+
+          <p><i><b>Разрешенный контент</b></i></p>
+          <p>Прозрачный контент, включающий атрибут <i>src</i> либо один или более элементов 
+          <i>source</i>, за которыми следует потоковый или фразообразующий контент. Применение элементов 
+          <i>video</i> и <i>audio</i> не допускается.</p>
+
+          <p><i><b>Начальные/конечные теги</b></i></p>
+          <p>Обязательный/обязательный.</p>
+
+          <h3>Атрибуты</h3>
+
+                         <p><i><strong>Глобальные атрибуты HTML5</strong></i></p>
+
+                         <p><i>autoplay (или autoplay="autoplay" в XHTML)</i></p>
+                         <p>Автоматическое возпроизведение мультимедийного файла.</p>
+                <hr>   
+                         <p>controls (или controls="controls" в XHTML)</p>
+                         <p>Указывает на необхадимость отображенияпользовательским агентом (браузером) 
+                            набора элементов управления воспроизведением мультимедийного файла.</p>
+                <hr>
+                         <p>crossorigin = "anonymous | use-credentials"</p>
+                         <p>Указывает на то, должен ли пользовательский агент проверять полномочия 
+                             для мультимедийного файла, загруженного по URL-ссылке, отличающейся 
+                             от адреса исходного документа. По умолчанию используется значение 
+                             anonymous (полномочия не требуются).</p>
+                <hr>
+                         <p>loop (или loop="loop" в XHTML)</p>
+                         <p>Указывает на то, что мультимедийный файл должен воспроизводиться повторно 
+                             в автоматическом режиме после завершения предыдущего воспроизведения</p>
+                <hr>
+                         <p>mediagroup = "текст"</p>
+                         <p>Связывает несколько мультимедийных элементов путем присваивания им одного 
+                            и того же значения mediagroup.</p>
+                <hr>
+                         <p>muted (или muted="muted" в XHTML)</p>
+                         <p>Отключает (приглушает) звук, даже если при этом переопределяются
+                            пользовательские предпочтения.</p>
+                <hr>
+                         <p>preload = "none | metadata | auto"</p>
+                         <p> Подсказывает браузеру, должен ли мультимедийный файл загружаться 
+                             автоматически на основании прогнозируемого поведения пользователя. 
+                             Значение none способствует предотвращению предварительной нагрузки, 
+                             а  metadata осуществляет выборку метаданныхресурса, но не загружает 
+                             мультимедийный файл. Если же указано значение  auto, то 
+                             пользовательский агент сам принимает решение о предварительной 
+                             загрузке мультимедийного файла.</p>
+                <hr>
+                         <p>src = "URL-ссылка"</p>
+                         <p>Указывает местоположение мультимедийного файла.</p>
+
+                         <h3>Примеры</h3>
+<pre>
+&lt;audio src="soundtrack.webm" autoplay controls&gt;
+   Ваш браузер не поддерживает встроенный звук.
+   Прослушайте файл &lt;a href="soundtrack.webm"&gt;здесь&lt;/a&gt;
+&lt;/audio&gt;
+&lt;audio id="soundtrack" controls preload="auto"&gt;
+   &lt;source src="soundtrack.mp3" type="audio/mp3"&gt;
+   &lt;source src="soundtrack.ogg" type="audio/ogg"&gt;
+   &lt;source src="soundtrack.webm" type="audio/webm"&gt;
+&lt;/audio&gt;
+</pre>
+
+
+
+        <div class="footer">
+            <div class="wrapper">
+                <p> &#169 2021   Erlend Sakharov</p>
+            </div>
+        </div> 
+    </body>
+</html>

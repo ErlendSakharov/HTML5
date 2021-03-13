@@ -1,0 +1,140 @@
+html. body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: rgb(92 122 125 / 30%);
+}
+.header {
+    margin-top: 20px;
+    text-align: center;
+}
+  .menu {
+      margin: 0;
+      padding: 0;
+    
+  }
+
+.menu ul {
+    list-style: none;
+}
+
+.menu  ul {
+display: flex;
+justify-content: center;
+}
+.menu > ul li a {
+    display: block;
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#aebcbf+40,6e7774+89 */
+background: rgb(174,188,191); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(174,188,191,1) 40%, rgba(110,119,116,1) 89%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(174,188,191,1) 40%,rgba(110,119,116,1) 89%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(174,188,191,1) 40%,rgba(110,119,116,1) 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#6e7774',GradientType=0 ); /* IE6-9 */
+
+
+
+
+
+    padding: 10px 20px 20px 40px;
+    font-size: 12px;
+    color: #454547;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    transition: all 0.3s ease;
+}
+
+.menu > ul li {
+    position: relative;
+    border-right: 1px solid #c7c8ca;
+}
+
+.menu > ul li > a i.fa {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+.menu > ul li:first-child {
+    border-left: 1px solid #b2b3b5;
+}
+.menu > ul li:last-child {
+    border-right: 1px solid #babbbb;
+}
+.menu li a:hover{
+    background: #454547;
+    color: #ffffff;
+    box-shadow: 1px 5px 30px -5px black;
+    transition: all 0.3s ease;
+
+}
+.h1 {
+    color: rgb(10, 10, 9);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+}
+.h1 p {
+    
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    /* font-style: italic; */
+
+}
+
+.text {
+   align-content: center;
+   display:block;
+   flex-basis: 0;
+   height: 100%;
+   align-content: stretch;
+    font-size: 15px;
+    color: rgb(8, 8, 6);
+    
+}
+
+.elements ul {
+    display: grid;
+    grid-template-columns:
+     100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+
+ul {
+    text-decoration:none;
+    font-size: 0;
+}
+
+.letters {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tegs a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+
+} 
+
+/* .tegs {
+    font-size: 45px;
+    color: black;
+    text-decoration: none;
+} */
+
+.footer {
+    text-align: justify;
+    color: #aca9a9;
+}
+
+.text_element_a {
+  text-decoration: none;
+  text-align: justify;
+}
+
+/* .text p {
+    background-color: darkcyan;
+}  */
+@media ()

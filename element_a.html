@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Элемент a</title>
+     <link rel="stylesheet" href="css/style.css">
+     <script src="https://kit.fontawesome.com/73d0ad5760.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+
+ </head>
+ <body>
+        <div class="header">
+
+            <div class="menu">
+                <ul>
+                  <li><a target="blank" href="index.html"><i class = "fa fa-cat"></i>В начало</a></li>
+                  <li><a target="blank" href="w3c_i_whatwg.html"><i class = "fa fa-hippo"></i>W3C и WHATWG</a></li>
+                  <li><a target="blank" href="new_semantic_elements.html"><i class = "fa fa-dog"></i>Семантические элементы</a></li>
+                  <li><a target="blank" href="biblioteki_html5_api.html"><i class = "fa fa-horse"></i>HTML5 API</a></li>
+                  <li><a target="blank" href="struktura_doc_html5.html"><i class = "fa fa-dove"></i>Структура документа</a></li>
+                  <li><a target="blank" href="poddergka_v_brauzerah.html"><i class = "fa fa-kiwi-bird"></i>Поддержка в браузерах</a></li>
+                  <li><a target="blank" href="prover_dost_doc.html"><i class = "fa fa-otter"></i>Достоверность документов</a></li>
+                  <li><a target="blank" href="global_atribut.html"><i class = "fa fa-spider"></i>Глобальные атрибуты</a></li>
+                  <li><a target="blank" href="obrabot_sobytiy.html"><i class = "fa fa-fish"></i>Обработчики событий</a></li>
+                  <li><a target="blank" href="alfavit_spisok.html"><i class = "fa fa-frog"></i>Список элементов</a></li>
+                </ul>
+
+            </div>
+
+
+
+                        <div class="h1">
+                            <h1>Элемент <i>a</i></h1>
+                            <p>&lt;a&gt;...&lt;/a&gt;</p>
+                        </div>
+
+                        <div class="text_element_a">
+                            <p>
+                                Определяет якорь (anchor), применяемый в качестве гипертекстовой
+                                ссылки или именованного фрагмента документа. Если атрибуту 
+                                 <i>href</i> присвоен корректный идентификатор URI, то в качесиве 
+                                 якоря выступает гипертекстовая ссылка на веб-страницу, фрагмент 
+                                 страницы или другой ресурс. Атрибут <i>id</i> используется в 
+                                 качестве метки якоря и служит целевой точкой ссылки. Элемент <i>a</i> 
+                                 может включать как атрибут <i>href</i>, так и атрибут <i>id</i>. Если 
+                                 элемент используется в качестве "сылки заполнителя", то атрибут 
+                                 <i>href</i> не указывается.
+                            </p>
+                             <p>
+                                 В HTML5 допускается включение в элемент <i>a</i> потокового контента 
+                                 (блочных элементов). Не допускается включение в состав элемента <i>a</i> 
+                                 интерактивного контента (<i>a, audio</i> с элементами управления, 
+                                 <i>button, details, embed, iframe, img,</i> с <i>usemap, input,
+                                 keygen, label, object</i> с <i>usemap, select, textarea</i> и <i>video</i>
+                                с элементами управления).
+                             </p>
+
+                             
+                             <h2>Применение</h2>
+                             <p><i><strong>Категории</strong></i></p>
+                             <p>Потоковый контент, фразообразующий контент, интерактивный контент, явный контент.</p>
+
+                             <p><i><strong>Допустимые контенты</strong></i></p>
+                             <p>В области возможного появления фразообразующего контента</p>
+
+                             <p><i><strong>Разрешенный контент</strong></i></p>
+                             <p>Прозрачный, не включающий другие интерактивные элементы</p>
+
+                             <p><i><strong>Начальные/конечные теги</strong></i></p>
+                             <p>Обязательный/обязательный</p>
+ 
+                             <h2>Атрибуты</h2>
+                             <p><i><strong>Глобальные атрибуты HTML5</strong></i></p>
+                             <p>download = "имя файла"</p>
+                             
+                             <p><strong>Только WHATWG и HTML5.1.</strong> Указывает на использование ссылки
+                               для загружаемого ресурса. В качестве значения применяется имя файла ресурса, 
+                               которое должно быть присвоено в локальной файловой системе сразу же после загрузки файла</p>
+                 <hr>
+                             <p>href = <i>"URI"</i></p>
+                             <p>Указывает местоположение целевого документа или веб-ресурса
+                               (такого, как изображение, звуковой файл, PDF-документ или другой 
+                               мультимедийный файл).</p>
+                 <hr>
+                             <p>hreflang = "код языка"</p>
+                             <p>Указывает основной язык целевого документа.</p>
+                             <p>media = "all | aural | braille | handheld | print | projection | screen | tty | tv"</p>
+                             <p><strong>Не поддерживается в HTML 4.01, только HTML5.</strong> Описывает носитель целевого 
+                                документа. По умолчанию принимает значение all. Этот атрибут удален в HTML5.1 и WHATWG</p>
+                 <hr>
+                             <p>ping = "URL-ссылки"</p>
+                             <p><strong>Только WHATWG.</strong> Указывает список URL-ссылок, используемых после перехода 
+                                по ссыке. Может применяться для отслеживания пользователя.</p>
+                 <hr>          
+                             <p>rel = "ключевое слово типа ссылки"</p>
+                             <p>Описывает одну или несколько связей между исходным и связанным документами. Для этого 
+                                a применяются следующие типы ссылочных связей: alternate, author, bookmark, help, license, 
+                                next, nofollow, noreferrer, prefetch, prev, search и tag.</p>
+                 <hr>
+                             <p>target = "текст"</p>
+                             <p>Указывает имя окна или области iframe, где будет отображаться целевой документ.</p>
+                 <hr>
+                             <p>type = "тип MIME"</p>
+                             <p>Указывает носители или тип контента (тип MIME) для связанного контента, например text/html.</p>
+
+                             <h2>Примеры</h2>
+
+                             <p>Ссылка на локальный файл:</p>
+                             <p><strong>&lt;a</strong> href="имя_файла.html"<strong>&gt;...&lt;/a&gt;</strong></p>
+<hr>
+                             <p>Ссылка на внешний файл:</p>
+                             <p><strong>&lt;a</strong> href="http://сервер/путь/файл.html"<strong>&gt;...&lt;/a&gt;</strong></p>
+<hr>
+                             <p>Для отправки сообщения электронной почты (браузер может запускать пользовательскую почтовую программу 
+                                с открытым окном создания сообщения) используется следующий код:</p>
+                             <p><strong>&lt;a</strong> href="mailto:имя_пользователя@домен"<strong>&gt;...&lt;/a&gt;</strong></p>
+<hr>
+                             <p>Ссылка на телефонный номер (браузеры мобильных телефонов могут отображать окно предупреждения, 
+                                позволяющее пользователю позвонить по номеру, используемому в качестве ссылки):</p>
+                             <p><strong>&lt;a</strong> href="tel:+1234567890"<strong>&gt;...&lt;/a&gt;</strong></p>
+<hr>
+                             <p>Ссылка на файл, находящийся на сервере FTP</p>
+                             <p><strong>&lt;a</strong> href="ftp://сервер/путь/имя файла"<strong>&gt;...&lt;/a&gt;</strong></p>
+<hr>
+                             <p>Создание именованного якоря в HTML:</p>
+                             <p><strong>&lt;a</strong> id="фрагмент"<strong>&gt;...&lt;/a&gt;</strong></p>
+<hr>
+                             <p>Ссылка на именованный якорь:</p>
+                             <p><strong>&lt;a</strong> href="http://сервер/путь/файл.html#фрагмент"<strong>&gt;...&lt;/a&gt;</strong></p>
+<hr>
+                             <p>Ссылка на именованный якорь в текущем файле:</p>
+                             <p><em><strong>&lt;a</strong> href="#фрагмент"<strong>&gt;...&lt;/a&gt;</strong></em></p>
+
+
+
+                        </div>
+                       
+
+                        <div class="footer">
+                            <div class="wrapper">
+                                <p> © 2021   Erlend Sakharov</p>
+                            </div>
+                        </div> 
+</body>
+</html>
